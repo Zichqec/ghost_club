@@ -9,11 +9,14 @@ $_Constant
 {
 	{$nexttime={$thenexttime}}
 	{$scentedcandle={$ascentedcandle}}
-	{$LastTalk="none"}
+	{$LastTalk=""}
 }
 
 $OnMouseDoubleClick; {$if ({$reference(3)}==0)};
 {$OnSakuraMenu}
+
+$OnKeyPress; {$if ({$reference(0)}=="f1")};
+\![open,readme]
 
 $OnKeyPress; {$if ({$reference(0)}=="t")};
 {$_OnRandomTalk}
@@ -21,14 +24,11 @@ $OnKeyPress; {$if ({$reference(0)}=="t")};
 $OnKeyPress; {$if ({$reference(0)}=="r")};
 {$OnLastTalk}
 
-$OnKeyPress; {$if ({$reference(0)}=="f1")};
-\![open,readme]
-
 $_OnRandomTalk;
 {$LastTalk={$RandomTalk}}{$LastTalk}
 
 $OnSurfaceRestore
-\0\s[0]\1\s[-1]
+\1\s[-1]\0\s[0]
 
 $sakura.recommendsites
 {
@@ -36,3 +36,6 @@ $sakura.recommendsites
 	"Sheet Cat" FreeshellTODO LINK
 	Misaka SHIORITODO LINK
 }
+
+$homeurl
+https://raw.githubusercontent.com/Zichqec/ghost_club/main/

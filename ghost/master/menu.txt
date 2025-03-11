@@ -1,7 +1,7 @@
 $OnSakuraMenu;
 {
 	\0\_q\![set,autoscroll,disable]
-	\![*]\q[Talk,OnForceTalk]  \![*]{$if ({$LastTalk}==none) {\f[color,disable]Repeat\f[color,default]} else {\q[Repeat,OnLastTalk]}}\n\n
+	\![*]\q[Talk,OnForceTalk]  \![*]{$if ({$LastTalk}=="") {\f[color,disable]Repeat\f[color,default]} else {\q[Repeat,OnLastTalk]}}\n\n
 	\![*]Talk rate (approximate):\n
 	
 	{$if ({$_talkinterval}==60) {\f[underline,1]\_a[OnTalkInterval,60]1m\_a\f[underline,default]} else {\__q[OnTalkInterval,60]1m\__q}}
