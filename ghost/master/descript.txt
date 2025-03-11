@@ -2,8 +2,7 @@ charset,UTF-8
 type,ghost
 name,Ghost Club!!!
 shiori,misaka.dll
-craftmanw,Zichqec
-craftman,Zichqec
-craftmanurl,https://ukagaka.zichqec.com/
+craftmanw,oooOOOooo
+craftman,oooOOOooo
 sakura.name,Ghostie
 kero.name,oOoOoOo
