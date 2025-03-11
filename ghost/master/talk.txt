@@ -39,7 +39,3 @@ $_OnRandomTalk; nonoverlap;
 \0\s0Do clubs have theme songs?\_w[1500]\s1 I kinda want to write a theme song for us.\_w[1500]\s6 Just imagine:\n\n[half]\_w[2000]\s5\f[italic,true]OoOOoOoOoooOOoOo,\_w[500]\s2 \f[bold,true]GHOST CLUB!!\f[bold,false]\_w[1000]\s5 oooOoOOoOOooOOoo\f[italic,false]\n\n[half]\_w[2500]\s1.\w9\w9.\w9\w9.\w9\w9.\w9\w9.\w9\w9.\w9\w9.\w9\w9.\w9\w9.\_w[2000]\s3 \f[color,150,150,150]I cannot believe I just did that out loud.............\f[color,black]\e
 \0\s0Maybe it would be fun to do themed costume nights.\_w[1500]\s1 We have our usual costumes of course, but what if one night we color coordinated and all dressed as {$choice("green","blue","purple","red")} ghosts...?\n\n[half]\_w[2000]\s6I suppose it would be better with more than just the two of us.......\e
 \0\s3Um...\_w[2000]\s8 S-sorry, I'm just feeling a little anxious at the moment.......\n\n[half]\_w[2000]\f[color,150,150,150]I'll be okay eventually...........\f[color,black]\e
-
-
-
-//TODO change the surface tags to the bracketless form...... because that's what the template uses lol

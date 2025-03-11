@@ -1,21 +1,21 @@
 $OnFirstBoot;
-\0\s[0]\1\s[-1]\0\s[2].\w8.\w8.\_w[1000] Ah, you're here!\_w[2000]\s[0] Then, um,\_w[250]\s[5] the first meeting of Ghost Club is now in session!\_w[2000]\n\n[half]\s[0].\w8.\w8.\w8.\w8.\_w[1000] So, um.\w8.\w8.\w8.\w8.\w8.\w8.\w8.\_w[2000]\s[3] N-now what...???\_w[2000]\n\n[half]\s[2]Hey wait!\_w[1000] D-don't go!\_w[1500]\s[3] I...\_w[1000] I made snacks?????\_w[2000]\n\n[half]\s[4]\f[color,disable]Th-they're ghost themed.........\f[color,default]\e
+\0\s0\1\s[-1]\0\s2.\w9.\w9.\_w[1000] Ah, you're here!\_w[2000]\s0 Then, um,\_w[250]\s5 the first meeting of Ghost Club is now in session!\_w[2000]\n\n[half]\s0.\w9.\w9.\w9.\w9.\_w[1000] So, um.\w9.\w9.\w9.\w9.\w9.\w9.\w9.\_w[2000]\s3 N-now what...???\_w[2000]\n\n[half]\s2Hey wait!\_w[1000] D-don't go!\_w[1500]\s3 I...\_w[1000] I made snacks?????\_w[2000]\n\n[half]\s4\f[color,150,150,150]Th-they're ghost themed.........\f[color,black]\e
 
 $OnBoot;
-\0\s[0]\1\s[-10]\0\s[2]Oh, you made it!\_w[1500]\s[3] Um, I-I...\_w[2000]\s[8] I burned the brownies, sorry.\_w[1500]\s[4] Don't feel like you...\_w[1000] Don't feel like you need to have any.\_w[2000] \f[color,disable]I'll eat them eventually.......\f[color,default]\e
-\0\s[0]\1\s[-10]\0\s[3]O-oh, are you here already...?\_w[2000]\s[2] Ah-\_w[250] it's not a problem!\_w[1000] It's fine!\_w[1500]\s[3] I just um...\_w[2000]\s[8] I spilled a bunch of candy corn on the floor, so I was hoping.....\_w[1500] \f[color,disable]that you might not get here for a while.........\f[color,default]\e
-\0\s[0]\1\s[-10]\0\s[0]You made it, we can start!\_w[1000]\s[5] Ghost Club is now in session!!\_w[2000]\n\n[half]\s[3]A-ah, I didn't mean to...\_w[1500] \f[color,disable]I didn't mean to imply that you were late, or anything??\f[color,default]\_w[2000]\n\n[half]\s[2]It's!\_w[1000] It's fine!\_w[1500]\s[3] L-lets just.\_w[1500] Let's just get things started, haha........\e
-\0\s[0]\1\s[-10]\0\s[3]Just have to finish picking up-\_w[250]\s[2] Oh!!\_w[1500]\s[8] You're here already???\_w[1500] I thought I had more time.....\n\n[half]\_w[2000]\s[2]Oh, don't stand outside,\_w[250]\s[5] come in, come in!\_w[1500]\s[1] Just uh, don't mind the mess.......\e
-\0\s[0]\1\s[-10]\0\s[5]Welcome, welcome!\_w[1500]\s[0] I've got everything ready for-\_w[500]\s[2] oh no!!!\_w[250]\s[-1]\n\n[half]\_w[4000]\s[4].........\_w[2000]\s[3] Don't worry about that burning smell.\_w[2000]\s[4] \f[color,disable]I'll make them properly next time.............\f[color,default]\e
-//\0\s[0]\1\s[-10]\0\s[1]\e
+\0\s0\1\s[-10]\0\s2Oh, you made it!\_w[1500]\s3 Um, I-I...\_w[2000]\s8 I burned the brownies, sorry.\_w[1500]\s4 Don't feel like you...\_w[1000] Don't feel like you need to have any.\_w[2000] \f[color,150,150,150]I'll eat them eventually.......\f[color,black]\e
+\0\s0\1\s[-10]\0\s3O-oh, are you here already...?\_w[2000]\s2 Ah-\_w[250] it's not a problem!\_w[1000] It's fine!\_w[1500]\s3 I just um...\_w[2000]\s8 I spilled a bunch of candy corn on the floor, so I was hoping.....\_w[1500] \f[color,150,150,150]that you might not get here for a while.........\f[color,black]\e
+\0\s0\1\s[-10]\0\s0You made it, we can start!\_w[1000]\s5 Ghost Club is now in session!!\_w[2000]\n\n[half]\s3A-ah, I didn't mean to...\_w[1500] \f[color,150,150,150]I didn't mean to imply that you were late, or anything??\f[color,black]\_w[2000]\n\n[half]\s2It's!\_w[1000] It's fine!\_w[1500]\s3 L-lets just.\_w[1500] Let's just get things started, haha........\e
+\0\s0\1\s[-10]\0\s3Just have to finish picking up-\_w[250]\s2 Oh!!\_w[1500]\s8 You're here already???\_w[1500] I thought I had more time.....\n\n[half]\_w[2000]\s2Oh, don't stand outside,\_w[250]\s5 come in, come in!\_w[1500]\s1 Just uh, don't mind the mess.......\e
+\0\s0\1\s[-10]\0\s5Welcome, welcome!\_w[1500]\s0 I've got everything ready for-\_w[500]\s2 oh no!!!\_w[250]\s[-1]\n\n[half]\_w[4000]\s4.........\_w[2000]\s3 Don't worry about that burning smell.\_w[2000]\s4 \f[color,150,150,150]I'll make them properly next time.............\f[color,black]\e
+//\0\s0\1\s[-10]\0\s1\e
 
 $OnClose;
-\0\s[3]It's getting late...\_w[1000]\s[6] Time to pack up, I guess.\_w[1500]\s[0] Um, s-so, same time next week...?\_w[2500]\-\e
-\0\s[6]The sun will be up soon...\_w[1000]\s[3] I guess we should get going.\_w[1500]\s[0] Um, I hope you had fun...!\_w[2500]\-\e
-\0\s[0]Well, I th-think this was a productive meeting, and um...\_w[1500]\s[3] I hope you'll come back next week?\_w[2000]\s[8] Or, well, y-you don't have to!\_w[1500] \s[3]I just mean...\_w[1500]\s[9] \f[color,disable]I-I had fun...!\f[color,default]\_w[2500]\-\e
-\0\s[0]Oh, is it time to go already...?\_w[1500]\s[6] I wish Ghost Club didn't have to end.....\n\n[half]\_w[2000]\s[0]Back to normal life, then.\_w[1500] Thanks for coming by.\_w[2500]\-\e
-\0\s[6]Another day of Ghost Club come and gone.....\_w[1500]\s[1] I had fun today, th-thanks for coming.\_w[2500]\-\e
-//\0\s[0]\_w[2500]\-\e
+\0\s3It's getting late...\_w[1000]\s6 Time to pack up, I guess.\_w[1500]\s0 Um, s-so, same time next week...?\_w[2500]\-\e
+\0\s6The sun will be up soon...\_w[1000]\s3 I guess we should get going.\_w[1500]\s0 Um, I hope you had fun...!\_w[2500]\-\e
+\0\s0Well, I th-think this was a productive meeting, and um...\_w[1500]\s3 I hope you'll come back next week?\_w[2000]\s8 Or, well, y-you don't have to!\_w[1500] \s3I just mean...\_w[1500]\s9 \f[color,150,150,150]I-I had fun...!\f[color,black]\_w[2500]\-\e
+\0\s0Oh, is it time to go already...?\_w[1500]\s6 I wish Ghost Club didn't have to end.....\n\n[half]\_w[2000]\s0Back to normal life, then.\_w[1500] Thanks for coming by.\_w[2500]\-\e
+\0\s6Another day of Ghost Club come and gone.....\_w[1500]\s1 I had fun today, th-thanks for coming.\_w[2500]\-\e
+//\0\s0\_w[2500]\-\e
 
 $OnGhostCallComplete;
 {$OtherGhostOpened}
@@ -24,8 +24,8 @@ $OnOtherGhostBooted;
 {$OtherGhostOpened}
 
 $OtherGhostOpened; nonoverlap;
-\0\s[2]Aah!!\_w[2000]\s[4] D-did you hear something...???\e
-\0\s[2]Ah!\_w[1500]\s[4] I-is someone else in here with us...?!\e
-\0\s[2]Eek!\_w[2000]\s[3] U-um, I know we're Ghost Club and all, b-but.....\_w[2000]\s[2] I-if we get real ghosts haunting us......!!\n\n[half]\_w[2000]\f[color,disable]Th-that's silly, ghosts aren't real..........\_w[3000] right?\f[color,default]\e
-\0\s[2]Aah!\_w[1500]\s[4] What was that......?!\n\n[half]\_w[2500]\s[3]Maybe my mind's playing tricks on me, it \f[italic,1]is\f[italic,default] getting a bit late...........\e
-\0\s[2]!!!\_w[2500]\s[3] Did...\_w[1500] did you hear something.....???\e
+\0\s2Aah!!\_w[2000]\s4 D-did you hear something...???\e
+\0\s2Ah!\_w[1500]\s4 I-is someone else in here with us...?!\e
+\0\s2Eek!\_w[2000]\s3 U-um, I know we're Ghost Club and all, b-but.....\_w[2000]\s2 I-if we get real ghosts haunting us......!!\n\n[half]\_w[2000]\f[color,150,150,150]Th-that's silly, ghosts aren't real..........\_w[3000] right?\f[color,black]\e
+\0\s2Aah!\_w[1500]\s4 What was that......?!\n\n[half]\_w[2500]\s3Maybe my mind's playing tricks on me, it \f[italic,true]is\f[italic,false] getting a bit late...........\e
+\0\s2!!!\_w[2500]\s3 Did...\_w[1500] did you hear something.....???\e
