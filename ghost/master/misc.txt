@@ -27,15 +27,15 @@ $OnKeyPress; {$if ({$reference(0)}==r)};
 $_OnRandomTalk;
 {$LastTalk={$RandomTalk}}{$LastTalk}
 
-$OnSurfaceRestore
+$OnSurfaceRestore;
 \1\s[-1]\0\s[0]
 
-$sakura.recommendsites
+$sakura.recommendsites;
 {
 	Zi's Ukagaka Spacehttps://ukagaka.zichqec.com/
 	"Sheet Cat" FreeshellTODO LINK
 	Misaka SHIORITODO LINK
 }
 
-$homeurl
+$homeurl;
 https://raw.githubusercontent.com/Zichqec/ghost_club/main/
