@@ -23,14 +23,14 @@ $_OnRandomTalk; nonoverlap;
 \0\s[0]Halloween was always my favorite holiday as a kid.\_w[1500]\s[1] I wasn't even all that interested in the candy, I just like being in a costume...\n\n[half]\_w[2000]\s[6]I always got the kind that fully covered my face.\_w[1500] Those were really relaxing.\e
 \0\s[1]I wonder if I could convince my boss to let me dress up as a ghost at work...\n\n\_w[2000]\s[6]People would probably think I'm weird.\_w[1500]\s[3] But they already think that,\_w[250]\s[6] so I might as well be weird \f[italic,1]and\f[italic,default] comfortable, right.....?\e
 \0\s[1]Do you think I'd scare {$choice("the mailman","the neighbors","the milkman")} if I answered the door dressed like this...?\_w[2000]\s[6] Probably.....\n\n[half]\_w[2000]\s[3]\f[color,disable]It's kinda unfair, isn't it.........\f[color,default]\e
-\0\s[0]Oh, um...\_w[1000]\s[3] We might have to reschedule the next meeting.\_w[2000] I...\_w[1500]\s[8] I scheduled {$nexttime} on the same day by mistake, so..........\_w[2000] I won't have time to prepare everything we need.\n\n[half]\_w[2000]\s[4]\f[color,disable]S-sorry for giving you such short notice................\f[color,default]\e
+\0\s[0]Oh, um...\_w[1000]\s[3] We might have to reschedule the next meeting.\_w[2000] I...\_w[1500]\s[8] I scheduled a doctor's appointment on the same day by mistake, so..........\_w[2000] I won't have time to prepare everything we need.\n\n[half]\_w[2000]\s[4]\f[color,disable]S-sorry for giving you such short notice................\f[color,default]\e
 \0\s[4]I think I might have cut too much fruit.\_w[1500]\s[3] Um, f-feel free to take some home with you, if you like...\_w[2000] \f[color,disable]No pressure, though........\f[color,default]\e
 \0\s[1]I was thinking about making little "ghost bags" or something...\_w[1500] Like, a little bag of goodies to take home at the end of the night.\_w[2000]\s[3] Is that too much...?\e
 \0\s[0]Um, if you want anything else, uh...\_w[1500]\s[1] F-feel free to let me know.\_w[2000]\s[3] I might not be able to get it today, but I could probably get it for the next meeting, at least.......\e
 \0\s[0]I wonder if I should try other costumes.....\_w[2000]\s[6] But this one is very comfy, so why bother unless I have a reason, I suppose...........\e
 \0\s[0]Sometimes I feel like you don't really know who someone is until they put on a costume.\n\n[half]\_w[2000].\w8.\w8.\w8.\w8.\w8.\w8.\w8.\w8.\_w[2000]\s[3] \f[color,disable]Is that a weird thought to have...?\f[color,default]\e
 \0\s[0]Um...\_w[2000]\s[3] I-I.....\_w[2000]\s[1] I like the costume you picked out..............\n\n[half]\_w[2000]\s[9]\f[color,disable]It's-\_w[250] it's nice.....!\f[color,default]\e
-\0\s[1]I thought it would be fun to try a couple scented candles to set the mood...\n\n[half]\_w[1500]These ones {$scentedcandle}.\_w[2000]\s[3] Um, but,\_w[250]\s[0] i-if they bother you just let me know and I'll put them out.\e
+\0\s[1]I thought it would be fun to try a couple scented candles to set the mood...\n\n[half]\_w[1500]These ones are pumpkin.\_w[2000]\s[3] Um, but,\_w[250]\s[0] i-if they bother you just let me know and I'll put them out.\e
 \0\s[0]S-sorry for um...\_w[1500]\s[3] Well, I mean.\_w[2000]\s[4] I guess I shouldn't apologize for.....\_w[1500]\s[3] F-for just existing....................\n\n[half]\_w[2000]\s[8]\f[color,disable]S-s-s-s-s........\_w[1500] Sorry......................\f[color,default]\e
 \0\s[0]I was thinking about making a banner to put up outside...\_w[1500] It could say something like "Ghost Club tonight", or "Ghost Club in session".....\_w[2000]\s[1] Maybe with some cute little ghosts drawn on.........\e
 \0\s[0]Sometimes I think to myself, "shouldn't a ghost club go out and haunt people?"\_w[1500]\s[3] But I don't really want to scare anyone.......\n\n[half]\_w[1500]\s[1]Maybe we could go around and give out candy instead?\_w[2000]\s[6] I guess that's just like Halloween, but in reverse.........\e
@@ -38,13 +38,8 @@ $_OnRandomTalk; nonoverlap;
 \0\s[3]S-sorry that I don't have more for us to do.\_w[2000]\s[1] It, um, means a lot to me that you're here anyway.\_w[1500] Thanks.....\e
 \0\s[0]Do clubs have theme songs?\_w[1500]\s[1] I kinda want to write a theme song for us.\_w[1500]\s[6] Just imagine:\n\n[half]\_w[2000]\s[5]\f[italic,1]OoOOoOoOoooOOoOo,\_w[500]\s[2] \f[bold,1]GHOST CLUB!!\f[bold,default]\_w[1000]\s[5] oooOoOOoOOooOOoo\f[italic,default]\n\n[half]\_w[2500]\s[1].\w8\w8.\w8\w8.\w8\w8.\w8\w8.\w8\w8.\w8\w8.\w8\w8.\w8\w8.\_w[2000]\s[3] \f[color,disable]I cannot believe I just did that out loud.............\f[color,default]\e
 \0\s[0]Maybe it would be fun to do themed costume nights.\_w[1500]\s[1] We have our usual costumes of course, but what if one night we color coordinated and all dressed as {$choice("green","blue","purple","red")} ghosts...?\n\n[half]\_w[2000]\s[6]I suppose it would be better with more than just the two of us.......\e
-{$nicetobehere}
-
-//Only way I can figure to add dialogues to the pool based on a condition lol. Because a condition being true doesn't *add* to the pool, it fully switches to that pool! So we can't add to randomtalk without this, I think... potentially major drawback? Certainly makes conditionals harder. But I mean hey, really will teach you to write without them huh :joy:
-$nicetobehere; {$if ({$elapsedminute}>=60)};
-\0\s[0]It's nice to just.....\_w[1500]\s[1] be here.\_w[2000]\s[3] I mean, um.\_w[1500] Does that make sense...?\_w[2000]\s[0] I-I just mean that I feel very relaxed right now.\_w[1500]\s[1] It's nice.\n\n[half]\_w[2000]\s[5]Thanks for hanging out.\e
-
-$nicetobehere;
 \0\s[3]Um...\_w[2000]\s[8] S-sorry, I'm just feeling a little anxious at the moment.......\n\n[half]\_w[2000]\f[color,disable]I'll be okay eventually...........\f[color,default]\e
+
+
 
 //TODO change the surface tags to the bracketless form...... because that's what the template uses lol
