@@ -17,13 +17,14 @@ $OnClose;
 \0\s6Another day of Ghost Club come and gone.....\_w[1500]\s1 I had fun today, th-thanks for coming.\_w[2500]\-\e
 //\0\s0\_w[2500]\-\e
 
-$OnGhostCallComplete;
-{$OtherGhostOpened}
+$OnGhostCallComplete; nonoverlap;
+\0\s2Aah!!\_w[2000]\s4 D-did you hear something...???\e
+\0\s2Ah!\_w[1500]\s4 I-is someone else in here with us...?!\e
+\0\s2Eek!\_w[2000]\s3 U-um, I know we're Ghost Club and all, b-but.....\_w[2000]\s2 I-if we get real ghosts haunting us......!!\n\n[half]\_w[2000]\f[color,150,150,150]Th-that's silly, ghosts aren't real..........\_w[3000] right?\f[color,black]\e
+\0\s2Aah!\_w[1500]\s4 What was that......?!\n\n[half]\_w[2500]\s3Maybe my mind's playing tricks on me, it \f[italic,true]is\f[italic,false] getting a bit late...........\e
+\0\s2!!!\_w[2500]\s3 Did...\_w[1500] did you hear something.....???\e
 
-$OnOtherGhostBooted;
-{$OtherGhostOpened}
-
-$OtherGhostOpened; nonoverlap;
+$OnOtherGhostBooted; nonoverlap;
 \0\s2Aah!!\_w[2000]\s4 D-did you hear something...???\e
 \0\s2Ah!\_w[1500]\s4 I-is someone else in here with us...?!\e
 \0\s2Eek!\_w[2000]\s3 U-um, I know we're Ghost Club and all, b-but.....\_w[2000]\s2 I-if we get real ghosts haunting us......!!\n\n[half]\_w[2000]\f[color,150,150,150]Th-that's silly, ghosts aren't real..........\_w[3000] right?\f[color,black]\e
