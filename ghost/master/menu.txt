@@ -1,0 +1,31 @@
+$OnSakuraMenu;
+{
+	\0\_q\![set,autoscroll,disable]
+	\![*]\q[Talk,OnForceTalk]  \![*]{$if ({$LastTalk}==none) {\f[color,disable]Repeat\f[color,default]} else {\q[Repeat,OnLastTalk]}}\n\n
+	\![*]Talk rate (approximate):\n
+	
+	{$if ({$_talkinterval}==60) {\f[underline,1]\_a[OnTalkInterval,60]1m\_a\f[underline,default]} else {\__q[OnTalkInterval,60]1m\__q}}
+	    
+	{$if ({$_talkinterval}==180) {\f[underline,1]\_a[OnTalkInterval,180]3m\_a\f[underline,default]} else {\__q[OnTalkInterval,180]3m\__q}}
+	    
+	{$if ({$_talkinterval}==300) {\f[underline,1]\_a[OnTalkInterval,300]5m\_a\f[underline,default]} else {\__q[OnTalkInterval,300]5m\__q}}
+	    
+	{$if ({$_talkinterval}==600) {\f[underline,1]\_a[OnTalkInterval,600]10m\_a\f[underline,default]} else {\__q[OnTalkInterval,600]10m\__q}}
+	    
+	{$if ({$_talkinterval}==900) {\f[underline,1]\_a[OnTalkInterval,900]15m\_a\f[underline,default]} else {\__q[OnTalkInterval,900]15m\__q}}
+	    
+	{$if ({$_talkinterval}==0) {\f[underline,1]\_a[OnTalkInterval,0]Off\_a\f[underline,default]} else {\__q[OnTalkInterval,0]Off\__q}}
+	
+	\n\n
+	
+	\![*]\q[Cancel,blank]
+}
+
+$OnForceTalk;
+{$_OnRandomTalk}
+
+$OnLastTalk;
+{$LastTalk}
+
+$OnTalkInterval;
+{$_talkinterval={$reference(0)}}{$OnSakuraMenu}
