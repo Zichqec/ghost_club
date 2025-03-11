@@ -1,0 +1,66 @@
+//Define global variables on first boot
+$_Variable
+{
+	{$_talkinterval=180}
+}
+
+//Set variables on each boot
+$_Constant
+{
+	{$nexttime={$thenexttime}}
+	{$scentedcandle={$ascentedcandle}}
+}
+
+//TODO maybe snip this for masquerade lol
+$thenexttime;
+a doctor's appointment
+a haircut
+some maintenance work
+my rest time
+
+//Having some issues with quotes being picked up as string literals... had to put something on either side of the quotes so it picks them both up
+$ascentedcandle;
+are pumpkin
+are vanilla
+are apple pie
+are candy corn
+are cinnamon spice
+are "harvest moon", apparently
+are "ethereal feeling", apparently
+are "moonless night", apparently
+are "bubbling cauldron", apparently
+are "midnight", apparently
+are "candle wax".....\_w[1500]\s[3] Which I guess is a little redundant........
+
+$OnChoiceSelect; {$if ({$reference(0)}=="talkinterval")}
+\0\s0\q0[talkinterval_level2][Often]\q1[talkinterval_level1][Normal]\q2[talkinterval_level0][Off]\n\q3[cancel][Cancel]\e
+
+$OnChoiceSelect; {$if ({$reference(0)}=="talkinterval_level2")}
+{$_talkinterval=60}\0\s0Set to "Often".\e
+
+$OnChoiceSelect; {$if ({$reference(0)}=="talkinterval_level1")}
+{$_talkinterval=180}\0\s0Set to "Normal".\e
+
+$OnChoiceSelect; {$if ({$reference(0)}=="talkinterval_level0")}
+{$_talkinterval=0}\0\s0Set to "Off".\e
+
+$OnChoiceSelect; {$if ({$reference(0)}=="cancel")}
+\0\s0Cancel.\e
+
+$OnChoiceSelect; {$if ({$reference(0)}=="forcedtalk")}
+{$_OnRandomTalk}
+
+$OnMouseDoubleClick; {$if ({$reference(3)}==0)}
+{
+\0
+\q[Talk,forcedtalk]\n\n
+\q[Talk interval,talkinterval]\n\n
+\q[Cancel,cancel]\n
+\e
+}
+
+$OnKeyPress; {$if ({$reference(0)}=="t")}
+{$_OnRandomTalk}
+
+$OnSurfaceRestore
+\0\s[0]\1\s[-1]\e
