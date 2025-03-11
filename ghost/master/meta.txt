@@ -1,0 +1,151 @@
+//—————————————————————————————— Installing something ——————————————————————————————
+//https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html#OnInstallBegin
+
+$OnInstallComplete; {$insentence({$reference(0)},"ghost")};
+{
+	\0Installed {$reference(1)} ({$reference(0)}).
+	\n\n\_q
+	\![*]\__q[OnInstallComplete.Action,call]Call {$reference(1)}\__q\n
+	\![*]\__q[OnInstallComplete.Action,change]Change to {$reference(1)}\__q
+	\n\n
+	\![*]\q[Okay,blank]
+}
+
+$OnInstallComplete.Action; {$if ({$reference(0)}==call)};
+\![call,ghost,lastinstalled]
+
+$OnInstallComplete.Action; {$if ({$reference(0)}==change)};
+\![change,ghost,lastinstalled]
+
+$OnInstallComplete;
+\0Installed {$reference(1)} ({$reference(0)}).
+
+$InstallFailureText;
+\0Could not complete installation:
+
+$OnInstallFailure; {$if ({$reference(0)}==unlha32)};
+{$InstallFailureText} could not load the dll to decompress lzh files.
+
+$OnInstallFailure; {$if ({$reference(0)}==extraction)};
+{$InstallFailureText} failed to decompress the file.
+
+$OnInstallFailure; {$if ({$reference(0)}==invalid type)};
+{$InstallFailureText} the install.txt is incorrect.
+
+$OnInstallFailure; {$if ({$reference(0)}==unsupported)};
+{$InstallFailureText} the archive is not supported.
+
+$OnInstallFailure; {$if ({$reference(0)}==password)};
+{$InstallFailureText} incorrect password.
+
+$OnInstallFailure; {$if ({$reference(0)}==artificial)};
+{$InstallFailureText} canceled by user.
+
+$OnInstallFailure;
+{$InstallFailureText} {$reference(0)}.
+
+
+//—————————————————————————————— Creating a .nar file ——————————————————————————————
+//https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html#OnNarCreating
+
+$OnNarCreated;
+\0Successfully created \_a[OnNarLocation,"{$reference(1))}"]{$reference(0)}\_a.
+
+$OnNarLocation;
+\![open,explorer,"{$reference(0)}"]
+
+
+//—————————————————————————————— Network Update ——————————————————————————————
+//https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html#OnUpdateBegin
+
+$OnUpdateBegin;
+\0Checking for updates.\w8
+
+//reference(0) is ZERO INDEXED, so 0 is for ONE FILE, not none
+//This is easier than trying to set up plural checks I think...
+$OnUpdateReady; {$if ({$reference(0)}==0)};
+\0There is 1 new file.\w8
+
+$OnUpdateReady;
+\0There are {$calc({$reference(0)}+1)} new files.\w8
+
+$OnUpdateComplete; {$if ({$reference(0)}==none)}
+\0There are no new files.
+
+$OnUpdateComplete;
+\0Update complete.
+
+$UpdateFailureText;
+\0Could not update:
+
+$OnUpdateFailure; {$if ({$reference(0)}==timeout)};
+{$UpdateFailureText} connection timed out.
+
+$OnUpdateFailure; {$if ({$reference(0)}==md5 miss)};
+{$UpdateFailureText} MD5 error.\n\nPlease contact the ghost author for assistance.
+
+$OnUpdateFailure; {$if ({$reference(0)}==artificial)};
+{$UpdateFailureText} canceled by user.
+
+$OnUpdateFailure;
+{$UpdateFailureText} {$reference(0)}.
+
+
+//—————————————————————————————— SNTP (clock fixing) ——————————————————————————————
+//https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html#OnSNTPBegin
+
+$OnSNTPCompare; {$if ({$reference(3)}==0)}
+\0The clock is accurate.
+
+//Easier than setting up plural checks...?
+$OnSNTPCompare; {$if ({$reference(3)}==1)}
+\0The clock is off by 1 second. {$SNTPEndText}
+
+$OnSNTPCompare;
+\0The clock is off by {$reference(3)} seconds. {$SNTPEndText}
+
+$SNTPEndText;
+\n\n\![*]\q[Fix it,script:\6]  \![*]\q[Leave it,blank]
+
+$OnSNTPCorrect;
+\0The clock has been corrected.
+
+$OnSNTPFailure;
+\0Could not correct the clock.
+
+
+//—————————————————————————————— BIFF (Email check) ———————————————————————————————
+//https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html#OnBIFFBegin
+
+$BIFFFailureText;
+\0Could not get emails:
+
+$OnBIFFFailure; {$if ({$reference(0)}==timeout)};
+{$BIFFFailureText} connection timed out.
+
+$OnBIFFFailure; {$if ({$reference(0)}==kick)};
+{$BIFFFailureText} can't access account.
+
+$OnBIFFFailure; {$if ({$reference(0)}==defect)};
+{$BIFFFailureText} POP settings incorrect.
+
+$OnBIFFFailure; {$if ({$reference(0)}==artificial)};
+{$BIFFFailureText} canceled by user.
+
+$OnBIFFFailure;
+{$BIFFFailureText} {$reference(0)}.
+
+
+//———————————————————————————————— Headlines/RSS ——————————————————————————————————
+//https://ukagakadreamteam.github.io/ukadoc/manual/list_shiori_event.html#OnHeadlinesenseBegin
+$HeadlinesenseFailureText;
+\0Could not get RSS:
+
+$OnHeadlinesenseFailure; {$if ({$reference(0)}==can't download)};
+{$HeadlinesenseFailureText} can't download the file.
+
+$OnHeadlinesenseFailure; {$if ({$reference(0)}==can't analyze)};
+{$HeadlinesenseFailureText} can't analyze the file.
+
+$OnHeadlinesenseFailure;
+{$HeadlinesenseFailureText} {$reference(0)}.
