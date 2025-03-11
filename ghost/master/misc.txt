@@ -15,13 +15,13 @@ $_Constant
 $OnMouseDoubleClick; {$if ({$reference(3)}==0)};
 {$OnSakuraMenu}
 
-$OnKeyPress; {$if ({$reference(0)}=="f1")};
+$OnKeyPress; {$if ({$reference(0)}==f1)};
 \![open,readme]
 
-$OnKeyPress; {$if ({$reference(0)}=="t")};
+$OnKeyPress; {$if ({$reference(0)}==t)};
 {$_OnRandomTalk}
 
-$OnKeyPress; {$if ({$reference(0)}=="r")};
+$OnKeyPress; {$if ({$reference(0)}==r)};
 {$OnLastTalk}
 
 $_OnRandomTalk;

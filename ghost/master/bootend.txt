@@ -25,7 +25,7 @@ $OnOtherGhostBooted;
 
 $OtherGhostOpened; nonoverlap;
 \0\s[2]Aah!!\_w[2000]\s[4] D-did you hear something...???
-\0\s[2]Ah!\_w[1500]\s[4] I-is someone else in here with us...?!
+\0\s[2]Ah!\_w[1500]\s[4] I-is someone else in here with us...!?
 \0\s[2]Eek!\_w[2000]\s[3] U-um, I know we're Ghost Club and all, b-but.....\_w[2000]\s[2] I-if we get real ghosts haunting us......!!\n\n[half]\_w[2000]\f[color,disable]Th-that's silly, ghosts aren't real..........\_w[3000] right?\f[color,default]
-\0\s[2]Aah!\_w[1500]\s[4] What was that......?!\n\n[half]\_w[2500]\s[3]Maybe my mind's playing tricks on me, it \f[italic,1]is\f[italic,default] getting a bit late...........
+\0\s[2]Aah!\_w[1500]\s[4] What was that......!?\n\n[half]\_w[2500]\s[3]Maybe my mind's playing tricks on me, it \f[italic,1]is\f[italic,default] getting a bit late...........
 \0\s[2]!!!\_w[2500]\s[3] Did...\_w[1500] did you hear something.....???
