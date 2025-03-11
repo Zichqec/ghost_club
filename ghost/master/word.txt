@@ -1,0 +1,19 @@
+$thenexttime;
+a doctor's appointment
+a haircut
+some maintenance work
+my rest time
+
+//Having some issues with quotes being picked up as string literals... had to put something on either side of the quotes so it picks them both up
+$ascentedcandle;
+are pumpkin
+are vanilla
+are apple pie
+are candy corn
+are cinnamon spice
+are "harvest moon", apparently
+are "ethereal feeling", apparently
+are "moonless night", apparently
+are "bubbling cauldron", apparently
+are "midnight", apparently
+are "candle wax".....\_w[1500]\s[3] Which I guess is a little redundant........
