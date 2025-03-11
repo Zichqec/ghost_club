@@ -9,6 +9,7 @@ surface0-9,25
 	animation0.pattern1,overlay,101,100,0,0
 	animation0.pattern2,overlay,99,100,0,0
 	animation0.pattern3,overlay,100,100,0,0
+	animation0.option,shared-index
 	//blink 114
 
 	//tail 115-119
@@ -29,7 +30,7 @@ surface0-9,25
 	animation4.pattern9,replace,116,170,0,0
 	animation4.pattern10,replace,115,100,0,0
 	animation4.pattern11,replace,-1
-	animation4.option,background
+	animation4.option,background+shared-index
 
 	animation5.interval,random,12
 	animation5.pattern0,replace,115,50,0,0
@@ -42,7 +43,7 @@ surface0-9,25
 	animation5.pattern7,replace,118,170,0,0
 	animation5.pattern8,replace,115,100,0,0
 	animation5.pattern9,replace,-1
-	animation5.option,background
+	animation5.option,background+shared-index
 
 	animation6.interval,random,12
 	animation6.pattern0,replace,115,50,0,0
@@ -51,7 +52,7 @@ surface0-9,25
 	animation6.pattern3,replace,116,170,0,0
 	animation6.pattern4,replace,115,30,0,0
 	animation6.pattern5,replace,-1
-	animation6.option,background
+	animation6.option,background+shared-index
 
 	animation7.interval,random,12
 	animation7.pattern0,replace,115,50,0,0
@@ -60,7 +61,7 @@ surface0-9,25
 	animation7.pattern3,replace,118,170,0,0
 	animation7.pattern4,replace,115,30,0,0
 	animation7.pattern5,replace,-1
-	animation7.option,background
+	animation7.option,background+shared-index
 }
 
 surface0
