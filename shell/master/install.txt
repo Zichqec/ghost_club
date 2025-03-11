@@ -1,0 +1,4 @@
+Charset,UTF-8
+type,shell
+name,Sheet Cat
+directory,sheetcat_fs_scr

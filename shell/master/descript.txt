@@ -1,0 +1,9 @@
+seriko.alignmenttodesktop,bottom
+seriko.use_self_alpha,1
+
+charset,UTF-8
+type,shell
+
+name,Sheet Cat
+craftmanw,SmokyCinnamonRoll
+craftmanurl,https://smokycinnamon.github.io/indifferentsorrel/index.html

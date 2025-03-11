@@ -1,0 +1,223 @@
+version,1
+
+surface0-9,25
+{
+	element0,overlay,cat1.png,0,0
+
+	animation0.interval,always
+	animation0.pattern0,replace,100,0,0,0
+	animation0.pattern1,replace,101,100,0,0
+	animation0.pattern2,replace,0,100,0,0
+	animation0.pattern3,replace,100,100,0,0
+	//blink 114
+
+	//tail 115-119
+	animation3.interval,runonce
+	animation3.pattern0,overlay,115,0,0
+
+	animation4.interval,random,12
+	animation4.pattern0,overlay,115,50,0,0
+	animation4.pattern1,stop,3
+	animation4.pattern2,overlay,116,30,0,0
+	animation4.pattern3,overlay,117,60,0,0
+	animation4.pattern4,overlay,116,170,0,0
+	animation4.pattern5,overlay,115,30,0,0
+	animation4.pattern6,overlay,118,100,0,0
+	animation4.pattern7,overlay,115,100,0,0
+	animation4.pattern8,overlay,116,100,0,0
+	animation4.pattern9,overlay,117,70,0,0
+	animation4.pattern10,overlay,116,170,0,0
+	animation4.pattern11,overlay,115,100,0,0
+	animation4.pattern12,overlay,-1
+	animation4.pattern13,start,3
+
+	animation5.interval,random,12
+	animation5.pattern0,overlay,115,50,0,0
+	animation5.pattern1,stop,3
+	animation5.pattern2,overlay,118,30,0,0
+	animation5.pattern3,overlay,119,60,0,0
+	animation5.pattern4,overlay,118,170,0,0
+	animation5.pattern5,overlay,115,30,0,0
+	animation5.pattern6,overlay,118,100,0,0
+	animation5.pattern7,overlay,119,70,0,0
+	animation5.pattern8,overlay,118,170,0,0
+	animation5.pattern9,overlay,115,100,0,0
+	animation5.pattern10,overlay,-1
+	animation5.pattern11,start,3
+
+	animation6.interval,random,12
+	animation6.pattern0,overlay,115,50,0,0
+	animation6.pattern1,stop,3
+	animation6.pattern2,overlay,116,30,0,0
+	animation6.pattern3,overlay,117,60,0,0
+	animation6.pattern4,overlay,116,170,0,0
+	animation6.pattern5,overlay,115,30,0,0
+	animation6.pattern6,overlay,-1
+	animation6.pattern7,start,3
+
+	animation7.interval,random,12
+	animation7.pattern0,overlay,115,50,0,0
+	animation7.pattern1,stop,3
+	animation7.pattern2,overlay,118,30,0,0
+	animation7.pattern3,overlay,119,60,0,0
+	animation7.pattern4,overlay,118,170,0,0
+	animation7.pattern5,overlay,115,30,0,0
+	animation7.pattern6,overlay,-1
+	animation7.pattern7,start,3
+}
+
+surface0
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,102,0,0,0
+
+	animation2.interval,random,3
+	animation2.pattern0,overlay,102,0,0,0
+	animation2.pattern1,stop,1
+	animation2.pattern2,overlay,114,120,0,0
+	animation2.pattern3,overlay,102,120,0,0
+	animation2.pattern4,overlay,-1
+	animation2.pattern5,start,1
+}
+surface1
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,103,0,0,0
+}
+surface2
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,104,0,0
+}
+surface3
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,105,0,0
+}
+surface4
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,106,0,0
+}
+surface5
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,107,0,0
+}
+surface6
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,108,0,0
+}
+surface7
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,109,0,0
+}
+surface8
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,110,0,0
+}
+surface9
+{
+	animation1.interval,runonce
+	animation1.pattern0,overlay,111,0,0
+}
+
+surface25
+{
+	animation1.interval,always
+	animation1.pattern0,overlay,113,0,0,0
+	animation1.pattern1,overlay,112,400,0,0
+	animation1.pattern2,overlay,113,400,0,0
+}
+
+surface100
+{
+	element0,overlay,cat2.png,0,0
+}
+
+surface101
+{
+	element0,overlay,cat3.png,0,0
+}
+
+surface102
+{
+	element0,overlay,eyes.png,0,0
+}
+
+surface103
+{
+	element0,overlay,eyes.png,0,0
+	element1,overlay,blush.png,0,0
+}
+
+surface104
+{
+	element0,overlay,face1.png,0,0
+}
+surface105
+{
+	element0,overlay,face2.png,0,0
+}
+surface106
+{
+	element0,overlay,face3.png,0,0
+}
+surface107
+{
+	element0,overlay,face4.png,0,0
+}
+surface108
+{
+	element0,overlay,face5.png,0,0
+}
+surface109
+{
+	element0,overlay,eyes.png,0,0
+	element1,overlay,face6.png,0,0
+}
+surface110
+{
+	element0,overlay,face7.png,0,0
+}
+surface111
+{
+	element0,overlay,face8.png,0,0
+}
+surface112
+{
+	element0,overlay,face5.png,0,0
+	element1,overlay,face9.png,0,0
+}
+surface113
+{
+	element0,overlay,face5.png,0,0
+	element1,overlay,face10.png,0,0
+}
+surface114
+{
+	element0,overlay,blink.png,0,0
+}
+surface115
+{
+	element0,overlay,tail1.png,0,0
+}
+surface116
+{
+	element0,overlay,tail2.png,0,0
+}
+surface117
+{
+	element0,overlay,tail3.png,0,0
+}
+surface118
+{
+	element0,overlay,tail4.png,0,0
+}
+surface119
+{
+	element0,overlay,tail5.png,0,0
+}
