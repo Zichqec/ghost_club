@@ -1,0 +1,46 @@
+$OnSpectrePlugin.ConfirmCalibration;
+\![raiseplugin,Spectre,OnCustomCalibrationConfirm,sweat,unamused]
+
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==normal)};
+\s[0]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==embarrassed)};
+\s[1]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==surprised)};
+\s[2]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==anxious)};
+\s[3]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==discouraged)};
+\s[4]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==smile)};
+\s[5]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==relieved)};
+\s[6]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==angry)};
+\s[7]
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==indignant)};
+\s[9]
+
+//Maybe I should omit this one...?
+$OnSpectrePlugin.Surface; {$if ({$reference(0)}==thinking)};
+\s[8]
+
+$OnSpectrePlugin.Possession; {$if (({$reference(0)}==dissociated) && ({$random(4)}==0))};
+\0\s[2]Aah!!!\_w[2000]\s[3] Oh my god, did you hear that!?\n\n[half]\_w[2000]... Am I just imagining things.....?
+\0\s[2]Aah!?!?\_w[1500]\s[3]What was that, who's there!?\_w[2000]\s[4] I...\_w[1500] I.....\_w[2000]\s[9] If there's a ghost in here then show yourself!!!\n\n[half]\_w[2500]\s[1]\f[color,disable]..... Costume ghosts notwithstanding.....\f[color,default]
+\0\s[2]Oh my god, did you see that!?\_w[2000] ...\_w[1500]\s[4] No...?\n\n[half]\_w[2500]\s[3]Maybe I should lay down for a while........
+\0\s[2]Aah!?\_w[2000]\s[3] Oh my god, oh my god is my living room haunted!?\n\n[half]\_w[2000]\s[4]\f[color,disable]B-besides us, I mean......\f[color,default]
+\0\s[2]Eeeek!?\_w[2000]\s[4] Is someone there!?\_w[1500]\s[3] What was that!?\n\n[half]\_w[2500].\w8.\w8.\w8.\w8.\w8.\w8.\w8.\w8.\w8.\w8.\_w[2000]\s[4] I could have sworn I heard something, but it's gone now................
+
+$OnSpectrePlugin.Possession; {$if (({$reference(0)}==miserable) && ({$random(4)}==0))};
+\0\s[3]Oh, it...\_w[1500]\s[4] Is it just me or did it suddenly get...\_w[2000] colder in here?\n\n[half]\_w[2000]Maybe I'll turn the heat up......
+\0\s[3]Oh, I feel...\_w[1500]\s[4] I feel weird.\_w[2000] Maybe I should sit down for a bit......
+\0\s[3]Oh, that was...\_w[1500] I felt something strange.\_w[2000]\s[1] Um...\_w[1500] I don't know how to describe it.\_w[2000]\s[3] But it was........\n\n[half]\_w[2000]\s[4]Um, let's........\_w[1500] let's move on.
+\0\s[3]Ooh, ah...\_w[1500] goosebumps.\_w[1500]\s[1] Maybe it's getting a little \f[italic,1]too\f[italic,default] spooky in here.....?\n\n[half]\_w[2000].\w8.\w8.\_w[1500]\s[6] Nah.\_w[1500] Probably just a coincidence........
+\0\s[4]... \f[italic,1]Sniff\f[italic,default].....\_w[2000]\s[3] Ah-\_w[500] s-sorry.\_w[2000]\s[0] You ever just.....\_w[1500] suddenly feel really sad for no reason??\n\n[half]\_w[2000]\s[3]I mean I don't normally, but uh...\_w[2000]\s[4] I dunno, something just suddenly came over me........
+
+$OnSpectrePlugin.Possession; {$if (({$reference(0)}==cheerful) && ({$random(4)}==0))};
+\0\s[5]Hm-hmm, hm-hmm...\_w[1500]\s[2] Oh!\_w[1500]\s[3] Sorry, I dunno where that suddenly came from.\_w[1500]\s[6] I'm just feeling pretty relaxed today, I guess.....
+\0\s[5]Today's been a pretty good day, hasn't it?\n\n[half]\_w[3000]\s[0] .\w8.\w8.\w8.\w8.\w8.\w8.\_w[1500]\s[3] No it hasn't, it was pretty hectic earlier and I've been feeling kinda stressed........\_w[2000] \f[color,disable]Why did I say that.....?\f[color,default]
+\0\s[1]I'm glad you came.\n\n[half]\_w[3000]\s[3]S-sorry, I dunno where that came from, I just.....\_w[2000]\s[6] I dunno, I suddenly felt the need to say it???
+\0\s[6]Something about the atmosphere today is very calming.......\_w[2000]\s[1] Maybe I finally got the right candles.
+\0\s[6]I feel like I'm going to have a restful sleep later.\n\n[half]\_w[2000]\s[0].\w8.\w8.\w8.\w8.\w8.\w8.\_w[1500]\s[1] I guess I don't have any particular reason to think so, it's just a feeling, you know.........?
