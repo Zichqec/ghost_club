@@ -2,14 +2,17 @@
 $_Variable
 {
 	{$_talkinterval=180}
+	{$RandomTalkTime=0}
+	{$LastTalk=""}
 }
 
 //Set variables on each boot
 $_Constant
 {
+	{$RandomTalkTime=0}
+	{$LastTalk=""}
 	{$nexttime={$thenexttime}}
 	{$scentedcandle={$ascentedcandle}}
-	{$LastTalk=""}
 }
 
 $OnMouseDoubleClick; {$if ({$reference(3)}==0)};
@@ -19,16 +22,30 @@ $OnKeyPress; {$if ({$reference(0)}==f1)};
 \![open,readme]
 
 $OnKeyPress; {$if ({$reference(0)}==t)};
-{$_OnRandomTalk}
+{$OnStartTalk}
 
 $OnKeyPress; {$if ({$reference(0)}==r)};
 {$OnLastTalk}
 
-$_OnRandomTalk;
+//Something really unfortunate: Misaka has a function called $_OnRandomTalk, and it's lovely because it automatically fires at the specified talkrate, and it does this with a 0.5 to 1.5x variance in the talkrate time so that you naturally have variance
+//The tragic thing is, uh, this is bugged, as far as I can tell. If you change the talkrate while the ghost is running, it does not change until you reload. And I find reloading after changing the talkrate to not be acceptable as a compromise. It'd cause lag, reset nonoverlap, and reset my constant variables.
+//So! This little bit of code here is setting up my own counter to trigger RandomTalk myself... we lose the variation but I don't mind that since I'm not used to having it in the first place (but I'm sure I could set up code to recreate it if desired)
+//Well, little caveat with this: it seems OnSecondChange won't even run variable changes here unless it's called as GET? So the count isn't perfectly accurate. But it's close enough, I'll live... Possibly it's because even the variable changes are being treated as part of scripts or something. We'll just say it's to mimic the original functionality of varying the talk time and call it a feature and not a bug!
+//Note to self: the proper format for multiple checks is {$if ((condition) && (condition))}
+
+$OnSecondChange; {$if (({$RandomTalkTime}>={$_talkinterval}) && ({$_talkinterval}>0}))}
+{$RandomTalkTime=0}{$OnStartTalk}
+
+//I sort of want to slap the check for _talkinterval being greater than 0 here, but I fear bugs... so instead it shall tick upwards for eternity
+$OnSecondChange;
+{$RandomTalkTime+=1}
+
+$OnStartTalk;
 {$LastTalk={$RandomTalk}}{$LastTalk}
 
 $OnSurfaceRestore;
 \1\s[-1]\0\s[0]
+
 
 $sakura.recommendsites;
 {
