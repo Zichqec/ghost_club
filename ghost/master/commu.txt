@@ -44,3 +44,11 @@ $OnSpectrePlugin.Possession; {$if (({$reference(0)}==cheerful) && ({$random(4)}=
 \0\s[1]I'm glad you came.\n\n[half]\_w[3000]\s[3]S-sorry, I dunno where that came from, I just.....\_w[2000]\s[6] I dunno, I suddenly felt the need to say it???
 \0\s[6]Something about the atmosphere today is very calming.......\_w[2000]\s[1] Maybe I finally got the right candles.
 \0\s[6]I feel like I'm going to have a restful sleep later.\n\n[half]\_w[2000]\s[0].\w8.\w8.\w8.\w8.\w8.\w8.\_w[1500]\s[1] I guess I don't have any particular reason to think so, it's just a feeling, you know.........?
+
+
+$OnNeedlePoke; {$if ({$random(4)}==0)}; nonoverlap;
+\0\s[3]\f[color,disable]Aw man, I'm getting all itchy under my costume.....\f[color,default]
+\0\s[2]Ow!\_w[2000]\s[3] Did a mosquito get in here or something.....?\_w[2000]\s[1] Um, s-sorry, if it starts bugging you let me know and I'll um.......\_w[2000]\s[3] \f[color,disable]get some bug spray or something...?????\f[color,default]
+\0\s[3]Aah, my skin's all prickly.\_w[1500]\s[4] Do you ever get that way?\_w[2000]\s[8] It just happens to me sometimes, maybe I should go wrap up in a blanket for a bit........
+\0\s[3]\f[color,disable]Must've scratched myself earlier, I'll check it out tomorrow.....\f[color,default]
+\0\s[6]Hmm.....\_w[1500]\s[3] I think I might need to get some anti-itch cream.\_w[2000] \f[color,disable]Maybe when I head out tomorrow.........\f[color,default]
