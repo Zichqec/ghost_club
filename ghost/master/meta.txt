@@ -97,7 +97,7 @@ $OnUpdateFailure;
 $OnSNTPCompare; {$if ({$reference(3)}==0)}
 \0The clock is accurate.
 
-//Easier than setting up plural checks...?
+//Easier than setting up plural checks, I couldn't find a way to do them (but if you find a clean way, please tell me how)
 $OnSNTPCompare; {$if ({$reference(3)}==1)}
 \0The clock is off by 1 second. {$SNTPEndText}
 
@@ -105,7 +105,7 @@ $OnSNTPCompare;
 \0The clock is off by {$reference(3)} seconds. {$SNTPEndText}
 
 $SNTPEndText;
-\n\n\![*]\q[Fix it,script:\6]  \![*]\q[Leave it,blank]
+\n\n\_q\![*]\q[Fix it,script:\6]  \![*]\q[Leave it,blank]
 
 $OnSNTPCorrect;
 \0The clock has been corrected.
