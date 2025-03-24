@@ -5,5 +5,5 @@ shiori,misaka.dll
 craftmanw,Zichqec
 craftman,Zichqec
 craftmanurl,https://ukagaka.zichqec.com/
-sakura.name,Ghostie
+sakura.name,Felix
 kero.name,oOoOoOo
