@@ -41,7 +41,7 @@ $RandomTalk; nonoverlap;
 {$nicetobehere}
 
 //Only way I can figure to add dialogues to the pool based on a condition lol. Because a condition being true doesn't *add* to the pool, it fully switches to that pool! So we can't add to randomtalk without this, I think... potentially major drawback? Certainly makes conditionals harder. But I mean hey, really will teach you to write without them huh :joy:
-$nicetobehere; {$if ({$elapsedminute}>=60)};
+$nicetobehere; {$if ({$elapsedhour}>=1)};
 \0\s[0]It's nice to just.....\_w[1500]\s[1] be here.\_w[2000]\s[3] I mean, um.\_w[1500] Does that make sense...?\_w[2000]\s[0] I-I just mean that I feel very relaxed right now.\_w[1500]\s[1] It's nice.\n\n[half]\_w[2000]\s[5]Thanks for hanging out.
 
 $nicetobehere;
