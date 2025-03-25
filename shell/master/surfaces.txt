@@ -85,50 +85,50 @@ surface1
 surface2
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,104,0,0
+	animation1.pattern0,overlay,104,0,0,0
 }
 surface3
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,105,0,0
+	animation1.pattern0,overlay,105,0,0,0
 }
 surface4
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,106,0,0
+	animation1.pattern0,overlay,106,0,0,0
 }
 surface5
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,107,0,0
+	animation1.pattern0,overlay,107,0,0,0
 }
 surface6
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,108,0,0
+	animation1.pattern0,overlay,108,0,0,0
 }
 surface7
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,109,0,0
+	animation1.pattern0,overlay,109,0,0,0
 }
 surface8
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,110,0,0
+	animation1.pattern0,overlay,110,0,0,0
 }
 surface9
 {
 	animation1.interval,runonce
-	animation1.pattern0,overlay,111,0,0
+	animation1.pattern0,overlay,111,0,0,0
 }
 
 surface25
 {
 	animation1.interval,always
 	animation1.pattern0,overlay,113,0,0,0
-	animation1.pattern1,overlay,112,400,0,0
-	animation1.pattern2,overlay,113,400,0,0
+	animation1.pattern1,overlay,112,400,0,0,0
+	animation1.pattern2,overlay,113,400,0,0,0
 }
 
 surface99
