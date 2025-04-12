@@ -2,14 +2,14 @@
 $_Variable
 {
 	{$_talkinterval=180}
-	{$RandomTalkTime=0}
+	{$RandomTalkTime=1}
 	{$LastTalk=""}
 }
 
 //Set variables on each boot
 $_Constant
 {
-	{$RandomTalkTime=0}
+	{$RandomTalkTime=1}
 	{$LastTalk=""}
 	{$nexttime={$thenexttime}}
 	{$scentedcandle={$ascentedcandle}}
@@ -31,12 +31,16 @@ $OnKeyPress; {$if ({$reference(0)}==r)};
 //The tragic thing is, uh, this is bugged, as far as I can tell. If you change the talkrate while the ghost is running, it does not change until you reload. And I find reloading after changing the talkrate to not be acceptable as a compromise. It'd cause lag, reset nonoverlap, and reset my constant variables.
 //So! This little bit of code here is setting up my own counter to trigger RandomTalk myself... we lose the variation but I don't mind that since I'm not used to having it in the first place (but I'm sure I could set up code to recreate it if desired)
 //Well, little caveat with this: it seems OnSecondChange won't even run variable changes here unless it's called as GET? So the count isn't perfectly accurate. But it's close enough, I'll live... Possibly it's because even the variable changes are being treated as part of scripts or something. We'll just say it's to mimic the original functionality of varying the talk time and call it a feature and not a bug!
+//UPDATE: i figured it out, there's a special prefix for anything returned as notify. ... um. uh. that's awkward to work with lol. I should do some testing to see if having JUST the notify version would work...? but I don't think it would............. this is why ukadoc has the note that just because an event says get or notify doesn't mean that it'll always be returned as that lol
+//TODO off by one. Uh, investigate why that doesn't happen with the YAYA setup...??? actually check Aosora to see if it also exhibits this behavior........ maybe double check with nanachi just out of curiosity lol
 //Note to self: the proper format for multiple checks is {$if ((condition) && (condition))}
 
 $OnSecondChange; {$if (({$RandomTalkTime}>={$_talkinterval}) && ({$_talkinterval}>0}))}
-{$RandomTalkTime=0}{$OnStartTalk}
+{$RandomTalkTime=1}{$OnStartTalk}
 
 //I sort of want to slap the check for _talkinterval being greater than 0 here, but I fear bugs... so instead it shall tick upwards for eternity
+$OnNotify_OnSecondChange;
+{$RandomTalkTime+=1}
 $OnSecondChange;
 {$RandomTalkTime+=1}
 
@@ -56,3 +60,7 @@ $sakura.recommendsites;
 
 $homeurl;
 https://raw.githubusercontent.com/Zichqec/ghost_club/main/
+
+//How to get the username... this ghost won't use it but for future reference
+//$OnNotify_OnNotifyUserInfo
+//{$username={$reference(0)}}

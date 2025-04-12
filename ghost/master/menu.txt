@@ -28,4 +28,4 @@ $OnLastTalk;
 {$LastTalk}
 
 $OnTalkInterval;
-{$_talkinterval={$reference(0)}}{$RandomTalkTime=0}{$OnSakuraMenu}
+{$_talkinterval={$reference(0)}}{$RandomTalkTime=1}{$OnSakuraMenu}
