@@ -4,5 +4,5 @@ name,Ghost Club!!!
 shiori,misaka.dll
 craftmanw,oooOOOooo
 craftman,oooOOOooo
-sakura.name,Ghostie
+sakura.name,Felix
 kero.name,oOoOoOo
