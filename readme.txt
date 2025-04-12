@@ -1,15 +1,12 @@
 ﻿Your friend has started a "Ghost Club" and has invited you to join. Will you go...?
 
-TODO get the right formatting later
-
-Estimated startup time: 0 minutes
-
-Materials used:
+【使用素材】
+Materials used
 
 Freeshell "Sheet Cat" by SmokyCinnamonroll
-<link>
+https://github.com/SmokyCinnamon/indifferentsorrel/releases/tag/scfs
 
-SHIORI "misaka.dll" by Is (is that Is or Ls... find out)
-<link>
+SHIORI "misaka.dll" by ls
+https://lovelove.rabi-en-rose.net/index_misaka.php
 
 All other materials are self-made or do not require declaration.
