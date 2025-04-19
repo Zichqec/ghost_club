@@ -2,12 +2,11 @@
 
 
 【使用素材】
-Materials used
 
-Freeshell "Sheet Cat" by SmokyCinnamonroll
-https://github.com/SmokyCinnamon/indifferentsorrel/releases/tag/scfs
+"Sheet Cat" freeshell
+by SmokyCinnamonroll https://github.com/SmokyCinnamon/indifferentsorrel/releases/tag/scfs
 
-SHIORI "misaka.dll" by ls
-https://lovelove.rabi-en-rose.net/index_misaka.php
+"misaka.dll" shiori
+by ls https://lovelove.rabi-en-rose.net/index_misaka.php
 
-All other materials are self-made or do not require declaration.
+Other than the above, all materials are homemade or do not require attribution.
