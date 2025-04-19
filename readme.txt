@@ -1,5 +1,6 @@
 ﻿Your friend has started a "Ghost Club" and has invited you to join. Will you go...?
 
+
 【使用素材】
 Materials used
 
