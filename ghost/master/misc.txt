@@ -53,8 +53,14 @@ $OnSurfaceRestore;
 $sakura.recommendsites;
 {
 	Zi's Ukagaka Spacehttps://ukagaka.zichqec.com/
-	"Sheet Cat" FreeshellTODO LINK
-	Misaka SHIORITODO LINK
+	"Sheet Cat" Freeshellhttps://github.com/SmokyCinnamon/indifferentsorrel/releases/tag/scfs
+	Misaka SHIORIhttps://lovelove.rabi-en-rose.net/index_misaka.php
+}
+
+$sakura.portalsites;
+{
+	Ghost Masquerade 7https://earlduant.blog.fc2.com/blog-entry-918.html
+	Event afterwordhttps://earlduant.blog.fc2.com/blog-entry-923.html
 }
 
 $homeurl;
