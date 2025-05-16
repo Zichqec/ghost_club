@@ -2,16 +2,8 @@
 
 I thought it would be interesting to try a SHIORI I've never used before, so I made this in Misaka. There were some challenges, but all in all it was fun!
 
-TODO get the right formatting later
+Uses the "Sheet Cat" freeshell by SmokyCinnamonroll
+https://github.com/SmokyCinnamon/indifferentsorrel/releases/tag/scfs
 
-Estimated startup time: 0 minutes
-
-Materials used:
-
-Freeshell "Sheet Cat" by SmokyCinnamonroll
-<link>
-
-SHIORI "misaka.dll" by Is (is that Is or Ls... find out)
-<link>
-
-All other materials are self-made or do not require declaration.
+Also the SHIORI Misaka by ls
+https://lovelove.rabi-en-rose.net/index_misaka.php
