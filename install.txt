@@ -1,4 +1,4 @@
 charset,UTF-8
 type,ghost
 name,Ghost Club!!!
-directory,ghost_club_zi
+directory,ghost_club
